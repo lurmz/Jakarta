@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="/WEB-INF/templates/BasicTemplate.xhtml">
+    <ui:define name="content">
+        <div class="container mt-3">
+            <h1 class="mb-3">In Hogwarts we have the following books:</h1>
+            <h:form id="booksForm">
+                <h:commandButton styleClass="btn btn-light" value="Home" action="welcome"/><br/>
+
+                <div class="d-flex mb-3">
+                    <h:selectOneMenu value="#{bookListBean.selectedCategory}" styleClass="form-control me-2">
+                        <f:selectItem itemLabel="Select Category" itemValue="" noSelectionOption="true"/>
+                        <f:selectItems value="#{bookListBean.categories}" var="category" itemLabel="#{category.name}" itemValue="#{category.id}" />
+                    </h:selectOneMenu>
+                    <h:commandButton value="Filter by Category" action="#{bookListBean.filterByCategory}" class="btn btn-light">
+                        <f:ajax execute="@form" render="booksTable"/>
+                    </h:commandButton>
+                </div>
+ 
+                <div class="d-flex">
+                    <h:inputText value="#{bookListBean.searchKeyword}" styleClass="form-control me-2">
+                    	<f:passThroughAttribute name="placeholder" value="Enter book title" />
+                    </h:inputText>
+                    <h:commandButton value="Search by book Title" action="#{bookListBean.searchBooks}" class="btn btn-light">
+                        <f:ajax execute="@form" render="booksTable" />
+                    </h:commandButton>
+                </div>
+                <br/>
+                <h:dataTable id="booksTable" value="#{bookListBean.books}" var="book" styleClass="table table-hover">
+                    <h:column>
+                        <f:facet name="header">Title</f:facet>
+                        #{book.name}
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Writer</f:facet>
+                        #{book.writer.name}
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Category</f:facet>
+                        #{book.category.name}
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Publisher</f:facet>
+                        #{book.publisher.name}
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Publication Year</f:facet>
+                        #{book.publicationYear}
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Number of Pages</f:facet>
+                        #{book.nbrPage}
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Rating</f:facet>
+                        #{book.rating}
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Price</f:facet>
+                        #{book.price}
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Details</f:facet>
+                        <h:commandButton value="View Details" action="#{oneBookBean.viewBookDetails(book.id, 'bookdetails')}" styleClass="btn btn-light"/>
+                    </h:column>
+                    <h:column>
+                        <f:facet name="header">Add to Wishlist</f:facet>
+                        <h:commandButton value="Add" action="#{wishlistBean.addBookToWishList(book)}" styleClass="btn btn-primary"/>
+                    </h:column>
+                </h:dataTable>
+            </h:form>
+        </div>
+    </ui:define>
+</ui:composition>
+</html>

@@ -1,0 +1,14 @@
+ch\hevs\managedbeans\BookListBean.class
+ch\hevs\managedbeans\LibraryManagementBean.class
+ch\hevs\libraryservice\WishListBean.class
+ch\hevs\businessobject\Book.class
+ch\hevs\libraryservice\Library.class
+ch\hevs\libraryservice\LibraryBean.class
+ch\hevs\businessobject\ParentObject.class
+ch\hevs\businessobject\Publisher.class
+ch\hevs\businessobject\Writer.class
+ch\hevs\managedbeans\OneBookBean.class
+ch\hevs\libraryservice\WishList.class
+ch\hevs\managedbeans\WishlistBean.class
+ch\hevs\businessobject\Category.class
+ch\hevs\exception\LibraryException.class

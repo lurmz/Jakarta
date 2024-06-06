@@ -1,0 +1,585 @@
+{
+  "categories": [
+    {
+      "name": "Fantasy"
+    },
+    {
+      "name": "Fiction"
+    },
+    {
+      "name": "Young Adult"
+    },
+    {
+      "name": "Classics"
+    },
+    {
+      "name": "Science Fiction"
+    }
+  ],
+  "books": [
+    {
+      "name": "Harry Potter and the Sorcerer's Stone",
+      "price": 20.99,
+      "year": 1997,
+      "pages": 320,
+      "rating": 4,
+      "imageUrl": "https://images.gr-assets.com/books/1474154022m/3.jpg"
+    },
+    {
+      "name": "Twilight",
+      "price": 15.50,
+      "year": 2005,
+      "pages": 498,
+      "rating": 3,
+      "imageUrl": "https://images.gr-assets.com/books/1361039443m/41865.jpg"
+    },
+    {
+      "name": "To Kill a Mockingbird",
+      "price": 18.75,
+      "year": 1960,
+      "pages": 324,
+      "rating": 4,
+      "imageUrl": "https://images.gr-assets.com/books/1361975680m/2657.jpg"
+    },
+    {
+      "name": "The Great Gatsby",
+      "price": 12.99,
+      "year": 1925,
+      "pages": 180,
+      "rating": 3,
+      "imageUrl": "https://images.gr-assets.com/books/1490528560m/4671.jpg"
+    },
+    {
+      "name": "The Fault in Our Stars",
+      "price": 14.25,
+      "year": 2012,
+      "pages": 313,
+      "rating": 4,
+      "imageUrl": "https://images.gr-assets.com/books/1360206420m/11870085.jpg"
+    },
+    {
+      "name": "The Hobbit",
+      "price": 25.00,
+      "year": 1937,
+      "pages": 310,
+      "rating": 4,
+      "imageUrl": "https://images.gr-assets.com/books/1372847500m/5907.jpg"
+    },
+    {
+      "name": "The Catcher in the Rye",
+      "price": 18.75,
+      "year": 1951,
+      "pages": 214,
+      "rating": 3,
+      "imageUrl": "https://images.gr-assets.com/books/1398034300m/5107.jpg"
+    },
+    {
+      "name": "Angels & Demons",
+      "price": 12.99,
+      "year": 2000,
+      "pages": 616,
+      "rating": 3,
+      "imageUrl": "https://images.gr-assets.com/books/1303390735m/960.jpg"
+    },
+    {
+      "name": "The Kite Runner",
+      "price": 18.75,
+      "year": 2003,
+      "pages": 371,
+      "rating": 4,
+      "imageUrl": "https://images.gr-assets.com/books/1484565687m/77203.jpg"
+    },
+    {
+      "name": "Divergent",
+      "price": 12.99,
+      "year": 2011,
+      "pages": 487,
+      "rating": 4,
+      "imageUrl": "https://images.gr-assets.com/books/1328559506m/13335037.jpg"
+    },
+    {
+      "name": "1984",
+      "price": 14.25,
+      "year": 1949,
+      "pages": 328,
+      "rating": 4,
+      "imageUrl": "https://images.gr-assets.com/books/1348990566m/5470.jpg"
+    },
+    {
+      "name": "Animal Farm",
+      "price": 18.75,
+      "year": 1945,
+      "pages": 122,
+      "rating": 3,
+      "imageUrl": "https://images.gr-assets.com/books/1424037542m/7613.jpg"
+    },
+    {
+      "name": "The Diary of a Young Girl",
+      "price": 12.99,
+      "year": 1947,
+      "pages": 283,
+      "rating": 4,
+      "imageUrl": "https://images.gr-assets.com/books/1358276407m/48855.jpg"
+    },
+    {
+      "name": "The Girl with the Dragon Tattoo",
+      "price": 14.25,
+      "year": 2005,
+      "pages": 465,
+      "rating": 4,
+      "imageUrl": "https://images.gr-assets.com/books/1327868566m/2429135.jpg"
+    },
+    {
+      "name": "Catching Fire",
+      "price": 18.75,
+      "year": 2009,
+      "pages": 391,
+      "rating": 4,
+      "imageUrl": "https://images.gr-assets.com/books/1358273780m/6148028.jpg"
+    },
+    {
+      "name": "Harry Potter and the Prisoner of Azkaban",
+      "price": 12.99,
+      "year": 1999,
+      "pages": 435,
+      "rating": 4,
+      "imageUrl": "https://images.gr-assets.com/books/1499277281m/5.jpg"
+    },
+    {
+      "name": "The Fellowship of the Ring",
+      "price": 14.25,
+      "year": 1954,
+      "pages": 423,
+      "rating": 4,
+      "imageUrl": "https://images.gr-assets.com/books/1298411339m/34.jpg"
+    },
+    {
+      "name": "Mockingjay",
+      "price": 18.75,
+      "year": 2010,
+      "pages": 390,
+      "rating": 4,
+      "imageUrl": "https://images.gr-assets.com/books/1358275419m/7260188.jpg"
+    },
+    {
+      "name": "Harry Potter and the Order of the Phoenix",
+      "price": 12.99,
+      "year": 2003,
+      "pages": 870,
+      "rating": 4,
+      "imageUrl": "https://images.gr-assets.com/books/1387141547m/2.jpg"
+    },
+    {
+      "name": "The Hunger Games",
+      "price": 18.75,
+      "year": 2008,
+      "pages": 374,
+      "rating": 4,
+      "imageUrl": "https://images.gr-assets.com/books/1447303603m/2767052.jpg"
+    }
+  ],
+  "writers": [
+    {
+      "name": "Suzanne Collins",
+      "email": "contact@suzannecollinsbooks.com",
+      "phoneNumber": "800-101-0101"
+    },
+    {
+      "name": "J.K. Rowling",
+      "email": "info@jkrowling.co.uk",
+      "phoneNumber": "800-101-0102"
+    },
+    {
+      "name": "Stephenie Meyer",
+      "email": "contact@stepheniemeyer.com",
+      "phoneNumber": "800-101-0103"
+    },
+    {
+      "name": "Harper Lee",
+      "email": "support@harperleebooks.com",
+      "phoneNumber": "800-101-0104"
+    },
+    {
+      "name": "F. Scott Fitzgerald",
+      "email": "info@fscottfitzgerald.com",
+      "phoneNumber": "800-101-0105"
+    },
+    {
+      "name": "John Green",
+      "email": "contact@johngreenbooks.com",
+      "phoneNumber": "800-101-0106"
+    },
+    {
+      "name": "J.R.R. Tolkien",
+      "email": "info@tolkienestate.com",
+      "phoneNumber": "800-101-0107"
+    },
+    {
+      "name": "J.D. Salinger",
+      "email": "support@salingernovels.com",
+      "phoneNumber": "800-101-0108"
+    },
+    {
+      "name": "Dan Brown",
+      "email": "contact@danbrown.com",
+      "phoneNumber": "800-101-0109"
+    },
+    {
+      "name": "Jane Austen",
+      "email": "info@janeausten.org",
+      "phoneNumber": "800-101-0110"
+    },
+    {
+      "name": "Khaled Hosseini",
+      "email": "support@khaledhosseini.com",
+      "phoneNumber": "800-101-0111"
+    },
+    {
+      "name": "Veronica Roth",
+      "email": "contact@veronicarothbooks.com",
+      "phoneNumber": "800-101-0112"
+    },
+    {
+      "name": "George Orwell",
+      "email": "info@georgeorwell.org",
+      "phoneNumber": "800-101-0113"
+    },
+    {
+      "name": "Anne Frank",
+      "email": "support@annefrank.org",
+      "phoneNumber": "800-101-0114"
+    },
+    {
+      "name": "Stieg Larsson",
+      "email": "contact@stieglarsson.com",
+      "phoneNumber": "800-101-0115"
+    }
+  ],
+  "publishers": [
+    {
+      "name": "Scholastic Press",
+      "email": "contact@scholasticpress.com",
+      "phoneNumber": "800-555-0101"
+    },
+    {
+      "name": "Bloomsbury Publishing",
+      "email": "info@bloomsbury.com",
+      "phoneNumber": "800-555-0102"
+    },
+    {
+      "name": "Little, Brown and Company",
+      "email": "support@littlebrown.com",
+      "phoneNumber": "800-555-0103"
+    },
+    {
+      "name": "J.B. Lippincott & Co.",
+      "email": "contact@lippincott.com",
+      "phoneNumber": "800-555-0104"
+    },
+    {
+      "name": "Scribner",
+      "email": "info@scribner.com",
+      "phoneNumber": "800-555-0105"
+    },
+    {
+      "name": "Dutton Books",
+      "email": "support@duttonbooks.com",
+      "phoneNumber": "800-555-0106"
+    },
+    {
+      "name": "Houghton Mifflin Harcourt",
+      "email": "info@hmhco.com",
+      "phoneNumber": "800-555-0107"
+    },
+    {
+      "name": "Penguin Books",
+      "email": "contact@penguinbooks.com",
+      "phoneNumber": "800-555-0108"
+    },
+    {
+      "name": "Doubleday",
+      "email": "info@doubleday.com",
+      "phoneNumber": "800-555-0109"
+    },
+    {
+      "name": "Macmillan Publishers",
+      "email": "support@macmillan.com",
+      "phoneNumber": "800-555-0110"
+    },
+    {
+      "name": "Katherine Tegen Books",
+      "email": "contact@ktegenbooks.com",
+      "phoneNumber": "800-555-0111"
+    },
+    {
+      "name": "Signet Books",
+      "email": "info@signetbooks.com",
+      "phoneNumber": "800-555-0112"
+    },
+    {
+      "name": "Bantam Books",
+      "email": "support@bantambooks.com",
+      "phoneNumber": "800-555-0113"
+    },
+    {
+      "name": "Riverhead Books",
+      "email": "info@riverheadbooks.com",
+      "phoneNumber": "800-555-0114"
+    },
+    {
+      "name": "Knopf",
+      "email": "contact@knopf.com",
+      "phoneNumber": "800-555-0115"
+    },
+    {
+      "name": "Allen & Unwin",
+      "email": "info@allenunwin.com",
+      "phoneNumber": "800-555-0116"
+    },
+    {
+      "name": "Scholastic Inc.",
+      "email": "support@scholasticinc.com",
+      "phoneNumber": "800-555-0117"
+    }
+  ],
+  "associations": {
+    "category_books": [
+      {
+        "category": "Fantasy",
+        "books": [
+          "Harry Potter and the Sorcerer's Stone",
+          "The Hobbit",
+          "Harry Potter and the Prisoner of Azkaban",
+          "The Fellowship of the Ring",
+          "Harry Potter and the Order of the Phoenix"
+        ]
+      },
+      {
+        "category": "Fiction",
+        "books": [
+          "To Kill a Mockingbird",
+          "The Great Gatsby",
+          "1984",
+          "Animal Farm",
+          "The Kite Runner",
+          "The Catcher in the Rye",
+          "The Diary of a Young Girl",
+          "The Girl with the Dragon Tattoo"
+        ]
+      },
+      {
+        "category": "Young Adult",
+        "books": [
+          "Twilight",
+          "The Fault in Our Stars",
+          "Divergent",
+          "Catching Fire",
+          "Mockingjay",
+          "The Hunger Games"
+        ]
+      },
+      {
+        "category": "Classics",
+        "books": [
+          "To Kill a Mockingbird",
+          "The Great Gatsby",
+          "1984",
+          "Animal Farm",
+          "The Catcher in the Rye"
+        ]
+      },
+      {
+        "category": "Science Fiction",
+        "books": [
+          "1984",
+          "Divergent",
+          "Angels & Demons"
+        ]
+      }
+    ],
+    "writer_books": [
+      {
+        "writer": "J.K. Rowling",
+        "books": [
+          "Harry Potter and the Sorcerer's Stone",
+          "Harry Potter and the Prisoner of Azkaban",
+          "Harry Potter and the Order of the Phoenix"
+        ]
+      },
+      {
+        "writer": "Stephenie Meyer",
+        "books": [
+          "Twilight"
+        ]
+      },
+      {
+        "writer": "Harper Lee",
+        "books": [
+          "To Kill a Mockingbird"
+        ]
+      },
+      {
+        "writer": "F. Scott Fitzgerald",
+        "books": [
+          "The Great Gatsby"
+        ]
+      },
+      {
+        "writer": "John Green",
+        "books": [
+          "The Fault in Our Stars"
+        ]
+      },
+      {
+        "writer": "J.R.R. Tolkien",
+        "books": [
+          "The Hobbit",
+          "The Fellowship of the Ring"
+        ]
+      },
+      {
+        "writer": "J.D. Salinger",
+        "books": [
+          "The Catcher in the Rye"
+        ]
+      },
+      {
+        "writer": "Dan Brown",
+        "books": [
+          "Angels & Demons"
+        ]
+      },
+      {
+        "writer": "Khaled Hosseini",
+        "books": [
+          "The Kite Runner"
+        ]
+      },
+      {
+        "writer": "Veronica Roth",
+        "books": [
+          "Divergent"
+        ]
+      },
+      {
+        "writer": "George Orwell",
+        "books": [
+          "1984",
+          "Animal Farm"
+        ]
+      },
+      {
+        "writer": "Anne Frank",
+        "books": [
+          "The Diary of a Young Girl"
+        ]
+      },
+      {
+        "writer": "Stieg Larsson",
+        "books": [
+          "The Girl with the Dragon Tattoo"
+        ]
+      },
+      {
+        "writer": "Suzanne Collins",
+        "books": [
+          "Catching Fire",
+          "Mockingjay",
+          "The Hunger Games"
+        ]
+      }
+    ],
+    "publisher_books": [
+      {
+        "publisher": "Scholastic Press",
+        "books": [
+          "Harry Potter and the Sorcerer's Stone",
+          "Harry Potter and the Prisoner of Azkaban",
+          "Harry Potter and the Order of the Phoenix"
+        ]
+      },
+      {
+        "publisher": "Little, Brown and Company",
+        "books": [
+          "Twilight"
+        ]
+      },
+      {
+        "publisher": "J.B. Lippincott & Co.",
+        "books": [
+          "To Kill a Mockingbird"
+        ]
+      },
+      {
+        "publisher": "Scribner",
+        "books": [
+          "The Great Gatsby"
+        ]
+      },
+      {
+        "publisher": "Dutton Books",
+        "books": [
+          "The Fault in Our Stars"
+        ]
+      },
+      {
+        "publisher": "Houghton Mifflin Harcourt",
+        "books": [
+          "The Hobbit",
+          "The Fellowship of the Ring"
+        ]
+      },
+      {
+        "publisher": "Penguin Books",
+        "books": [
+          "The Catcher in the Rye"
+        ]
+      },
+      {
+        "publisher": "Doubleday",
+        "books": [
+          "Angels & Demons"
+        ]
+      },
+      {
+        "publisher": "Riverhead Books",
+        "books": [
+          "The Kite Runner"
+        ]
+      },
+      {
+        "publisher": "Katherine Tegen Books",
+        "books": [
+          "Divergent"
+        ]
+      },
+      {
+        "publisher": "Signet Books",
+        "books": [
+          "1984",
+          "Animal Farm"
+        ]
+      },
+      {
+        "publisher": "Knopf",
+        "books": [
+          "The Diary of a Young Girl"
+        ]
+      },
+      {
+        "publisher": "Bantam Books",
+        "books": [
+          "The Girl with the Dragon Tattoo"
+        ]
+      },
+      {
+        "publisher": "Scholastic Inc.",
+        "books": [
+          "Catching Fire",
+          "Mockingjay",
+          "The Hunger Games"
+        ]
+      }
+    ]
+  }
+}

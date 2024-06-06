@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+ 
+<ui:composition template="/WEB-INF/templates/BasicTemplate.xhtml">
+    <ui:define name="content">
+        <div class="container mt-3">
+            <h1 class="mb-3">In Hogwarts we have the following writers:</h1>
+            <h:form>
+	            <h:commandButton class="btn btn-light" value="Home" action="welcome"/>
+	        </h:form><br/>
+            <h:dataTable value="#{bookListBean.writers}" var="writer" styleClass="table table-hover">
+                <h:column>
+                    <f:facet name="header">ID</f:facet>
+                    #{writer.id}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Name</f:facet>
+                    #{writer.name}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Email</f:facet>
+                    #{writer.contactInfo.email}
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Phone Number</f:facet>
+                    #{writer.contactInfo.phoneNumber}
+                </h:column>
+            </h:dataTable>
+        </div>
+    </ui:define>
+</ui:composition>
+</html>

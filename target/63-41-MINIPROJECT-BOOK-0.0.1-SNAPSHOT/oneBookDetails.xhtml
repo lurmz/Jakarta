@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="/WEB-INF/templates/BasicTemplate.xhtml">
+<ui:define name="content">
+    <div class="container mt-5" style="display: flex; justify-content: center; align-items: center;">
+        <div class="card" style="flex: 1; display: flex; flex-direction: row; align-items: center; justify-content: center;">
+            <div style="flex: 3; padding: 20px;">
+                <h1 class="text-title">Details of the Selected Book</h1>
+                <h2 class="card-title">#{oneBookBean.selectedBook.name}</h2>
+                <p class="card-text"><strong>Author:</strong> #{oneBookBean.selectedBook.writer.name}</p>
+                <p class="card-text"><strong>Category:</strong> #{oneBookBean.selectedBook.category.name}</p>
+                <p class="card-text"><strong>Publisher:</strong> #{oneBookBean.selectedBook.publisher.name}</p>
+                <p class="card-text"><strong>Publication Year:</strong> #{oneBookBean.selectedBook.publicationYear}</p>
+                <p class="card-text"><strong>Number of Pages:</strong> #{oneBookBean.selectedBook.nbrPage}</p>
+                <p class="card-text"><strong>Rating:</strong> #{oneBookBean.selectedBook.rating}</p>
+                <p class="card-text"><strong>Price:</strong> #{oneBookBean.selectedBook.price} USD</p>
+            </div>
+            <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+                <h:graphicImage value="#{oneBookBean.selectedBook.imgURL}" style="max-width: 100%; height: auto;"/>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <h:form>
+            <h:commandButton class="btn btn-light" value="Back" action="#{oneBookBean.goBack}"/>
+        </h:form>
+    </div><br/>
+</ui:define>
+</ui:composition>
+</html>

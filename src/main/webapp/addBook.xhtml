@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+ 
+<ui:composition template="/WEB-INF/templates/BasicTemplate.xhtml">
+    <ui:define name="content">
+        <div class="container mt-3">
+            <h1 class="mb-4">Add a New Book</h1>
+            <h:form class="needs-validation" novalidate="true">
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="name">Book Name:</label>
+                        <h:inputText id="name" value="#{libraryManagementBean.book.name}" styleClass="form-control" required="true"/>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="price">Price:</label>
+                        <h:inputText id="price" value="#{libraryManagementBean.book.price}" styleClass="form-control" required="true"/>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="publicationYear">Publication Year:</label>
+                        <h:inputText id="publicationYear" value="#{libraryManagementBean.book.publicationYear}" styleClass="form-control" required="true"/>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="nbrPage">Number of Pages:</label>
+                        <h:inputText id="nbrPage" value="#{libraryManagementBean.book.nbrPage}" styleClass="form-control" required="true"/>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="rating">Rating:</label>
+                        <h:inputText id="rating" value="#{libraryManagementBean.book.rating}" styleClass="form-control" required="true"/>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="imgURL">Image URL:</label>
+                        <h:inputText id="imgURL" value="#{libraryManagementBean.book.imgURL}" styleClass="form-control" required="true"/>
+                    </div>
+                    
+                    <div class="col-md-4 mb-3">
+                        <h:selectOneMenu id="category" value="#{libraryManagementBean.selectedCategoryId}" styleClass="form-control" required="true">
+                            <f:selectItem itemLabel="Select Category" itemValue="" noSelectionOption="true"/>
+                            <f:selectItems value="#{libraryManagementBean.categories}" var="category"
+                                           itemValue="#{category.id}" itemLabel="#{category.name}"/>
+                        </h:selectOneMenu>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h:selectOneMenu id="writer" value="#{libraryManagementBean.selectedWriterId}" styleClass="form-control" required="true">
+                            <f:selectItem itemLabel="Select Writer" itemValue="" noSelectionOption="true"/>
+                            <f:selectItems value="#{libraryManagementBean.writers}" var="writer"
+                                           itemValue="#{writer.id}" itemLabel="#{writer.name}"/>
+                        </h:selectOneMenu>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <h:selectOneMenu id="publisher" value="#{libraryManagementBean.selectedPublisherId}" styleClass="form-control" required="true">
+                            <f:selectItem itemLabel="Select Publisher" itemValue="" noSelectionOption="true"/>
+                            <f:selectItems value="#{libraryManagementBean.publishers}" var="publisher"
+                                           itemValue="#{publisher.id}" itemLabel="#{publisher.name}"/>
+                        </h:selectOneMenu>
+                    </div>
+                </div>
+                <h:panelGroup>
+                    <h:commandButton value="Add Book" action="#{libraryManagementBean.addBook}" styleClass="btn btn-primary"
+                                     disabled="#{empty libraryManagementBean.selectedCategoryId or empty libraryManagementBean.selectedWriterId or empty libraryManagementBean.selectedPublisherId}"/>
+                    <h:commandButton value="Cancel" action="welcome" immediate="true" styleClass="btn btn-secondary"/>
+                </h:panelGroup>
+            </h:form>
+        </div>
+    </ui:define>
+</ui:composition>
+</html>
